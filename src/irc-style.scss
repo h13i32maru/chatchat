@@ -1,0 +1,249 @@
+body.irc-style {
+    .ui_header {
+        display:none !important;
+    }
+
+    #cw_outer_west {
+        top:0 !important;
+    }
+
+    #cw_outer_center {
+        top:0 !important;
+    }
+
+    #cw_footer {
+        display:none !important;
+    }
+
+    .ui_roomcategory_area {
+        display:none;
+    }
+
+    /* 右サイドバーを縦幅いっぱいにする */
+    #cw_outer_west {
+        height: 100% !important;
+
+        #cw_roomlist_items_area {
+            padding-bottom: 100px;
+            height: 100% !important;
+            box-sizing: border-box;
+        }
+    }
+    /* end */
+
+    /* 右サイドバーを非表示にしてメインを横幅いっぱいにする */
+    #cw_middle_center {
+        width: 100% !important;
+        #cw_timeline {
+            width: 100% !important;
+        }
+    }
+
+    #cw_middle_east, #cw_middle_east-resizer {
+        display: none !important;
+    }
+    /* end */
+
+    /* メインを縦幅いっぱいにする */
+    #cw_outer_center {
+        height: 100% !important;
+
+        .ui-layout-north {
+            display:none !important;
+        }
+
+        #cw_middle_center {
+            top: 0 !important;
+            height: 100% !important;
+
+            #cw_main {
+                position:absolute;
+                top: -100px;
+                width: 100%;
+                height: 100% !important;
+
+                #cw_timeline {
+                    height: 100% !important;
+                }
+            }
+
+            #cw_send_area {
+                height: auto !important;
+                #cw_chattext_box {
+                    margin: 0 !important;
+                }
+                #cw_chattext {
+                    height: 68px !important;
+                }
+                #cw_send_button_box {
+                    display: none !important;
+                }
+            }
+        }
+    }
+    /* end */
+
+    /* タイムラインをIRC風にする */
+    #cw_timeline .ui_chat.ui_chat_anim {
+        padding: 2px;
+        border: none 0 #000 !important;
+
+        .cw_speaker.ui_speaker {
+            display:none;
+        }
+
+        .ui_message.cw_message {
+            margin: 0;
+            margin-left:3.8em;
+
+            .ui_chat_meta {
+                &:after {
+                    content:":";
+                    padding-right: 10px;
+                    font-weight: bold;
+                    color: #647EAF;
+                }
+
+                display:inline-block;
+                vertical-align: top;
+
+                .cw_chat_name.ui_chat_name {
+                    display:inline-block;
+                    width: 15em;
+                    height: 1.3em;
+                    overflow:hidden;
+                }
+
+                .ui_speaker_orgname {
+                    display:none;
+                }
+            }
+
+            pre {
+                display:inline-block;
+            }
+        }
+
+        .ui_chat_meta.ui_chat_date {
+            top: 2px;
+            right:auto;
+
+            span {
+                text-align:right;
+                position: absolute;
+                width: 10em;
+                right: -2.8em;
+            }
+        }
+
+    }
+
+    #cw_timeline .ui_chat_last {
+        border: none !important;
+    }
+    /* end */
+
+    /* room list */
+    #cw_only_unread_room {
+        border: none;
+    }
+    #cw_roomfilter_area {
+        position: absolute;
+        top: -30px;
+        left: 0;
+        border: none !important;
+        padding: 0;
+        input {
+            width: 176px;
+            height: 19px;
+        }
+    }
+    .cw_room_link.dev_room {
+        padding: 2px;
+        border: none;
+
+        .ui_room_icon {
+            display:none;
+        }
+
+        .ui_roomlist_orgtitle {
+            display:none;
+        }
+    }
+    /* end */
+
+    /* カラースタイル */
+    $bg_color: #222222;
+    $text_color: #dddddd;
+    #cw_timeline {
+        background-color: $bg_color;
+
+        .dev_date_head {
+            background-color: lighten($bg_color, 10%);
+            border: none;
+            color: $text_color;
+        }
+    }
+    #cw_timeline .ui_chat {
+        background-color: transparent;
+        &:hover {
+            background-color: #303030;
+        }
+
+        .ui_message pre {
+            color: $text_color;
+            .dev_quote {
+                background-color: transparent;
+                border-color: #888888;
+            }
+        }
+    }
+    #cw_send_area {
+        .toolbar {
+            background: $bg_color !important;
+            .cw_buttons {
+                color: $text_color;
+                background: transparent !important;
+            }
+        }
+        #cw_chattext {
+            background-color: $bg_color;
+            color: $text_color;
+            outline: 0;
+        }
+    }
+
+    #cw_outer_west {
+        background: $bg_color;
+
+        #cw_roomfilter_area {
+            background: $bg_color;
+        }
+
+        .ui_contentheader {
+            background: $bg_color;
+        }
+        .ui_chatlistheader li{
+            background: $bg_color;
+            color: $text_color;
+        }
+
+        .cw_room_link.dev_room {
+            &.dev_selected {
+                background: lighten($bg_color, 30%);
+            }
+            background: $bg_color;
+            color: $text_color;
+        }
+
+        .ui_room_limitover {
+            background: $bg_color;
+            color: $text_color;
+        }
+
+        #cw_roomlist_items_area {
+            background: $bg_color;
+        }
+    }
+    /* end */
+}

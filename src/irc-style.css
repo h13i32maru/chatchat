@@ -1,0 +1,154 @@
+@charset "UTF-8";
+body.irc-style {
+  /* 右サイドバーを縦幅いっぱいにする */
+  /* end */
+  /* 右サイドバーを非表示にしてメインを横幅いっぱいにする */
+  /* end */
+  /* メインを縦幅いっぱいにする */
+  /* end */
+  /* タイムラインをIRC風にする */
+  /* end */
+  /* room list */
+  /* end */
+  /* カラースタイル */
+  /* end */ }
+  body.irc-style .ui_header {
+    display: none !important; }
+  body.irc-style #cw_outer_west {
+    top: 0 !important; }
+  body.irc-style #cw_outer_center {
+    top: 0 !important; }
+  body.irc-style #cw_footer {
+    display: none !important; }
+  body.irc-style .ui_roomcategory_area {
+    display: none; }
+  body.irc-style #cw_outer_west {
+    height: 100% !important; }
+    body.irc-style #cw_outer_west #cw_roomlist_items_area {
+      padding-bottom: 100px;
+      height: 100% !important;
+      box-sizing: border-box; }
+  body.irc-style #cw_middle_center {
+    width: 100% !important; }
+    body.irc-style #cw_middle_center #cw_timeline {
+      width: 100% !important; }
+  body.irc-style #cw_middle_east, body.irc-style #cw_middle_east-resizer {
+    display: none !important; }
+  body.irc-style #cw_outer_center {
+    height: 100% !important; }
+    body.irc-style #cw_outer_center .ui-layout-north {
+      display: none !important; }
+    body.irc-style #cw_outer_center #cw_middle_center {
+      top: 0 !important;
+      height: 100% !important; }
+      body.irc-style #cw_outer_center #cw_middle_center #cw_main {
+        position: absolute;
+        top: -100px;
+        width: 100%;
+        height: 100% !important; }
+        body.irc-style #cw_outer_center #cw_middle_center #cw_main #cw_timeline {
+          height: 100% !important; }
+      body.irc-style #cw_outer_center #cw_middle_center #cw_send_area {
+        height: auto !important; }
+        body.irc-style #cw_outer_center #cw_middle_center #cw_send_area #cw_chattext_box {
+          margin: 0 !important; }
+        body.irc-style #cw_outer_center #cw_middle_center #cw_send_area #cw_chattext {
+          height: 68px !important; }
+        body.irc-style #cw_outer_center #cw_middle_center #cw_send_area #cw_send_button_box {
+          display: none !important; }
+  body.irc-style #cw_timeline .ui_chat.ui_chat_anim {
+    padding: 2px;
+    border: none 0 #000 !important; }
+    body.irc-style #cw_timeline .ui_chat.ui_chat_anim .cw_speaker.ui_speaker {
+      display: none; }
+    body.irc-style #cw_timeline .ui_chat.ui_chat_anim .ui_message.cw_message {
+      margin: 0;
+      margin-left: 3.8em; }
+      body.irc-style #cw_timeline .ui_chat.ui_chat_anim .ui_message.cw_message .ui_chat_meta {
+        display: inline-block;
+        vertical-align: top; }
+        body.irc-style #cw_timeline .ui_chat.ui_chat_anim .ui_message.cw_message .ui_chat_meta:after {
+          content: ":";
+          padding-right: 10px;
+          font-weight: bold;
+          color: #647EAF; }
+        body.irc-style #cw_timeline .ui_chat.ui_chat_anim .ui_message.cw_message .ui_chat_meta .cw_chat_name.ui_chat_name {
+          display: inline-block;
+          width: 15em;
+          height: 1.3em;
+          overflow: hidden; }
+        body.irc-style #cw_timeline .ui_chat.ui_chat_anim .ui_message.cw_message .ui_chat_meta .ui_speaker_orgname {
+          display: none; }
+      body.irc-style #cw_timeline .ui_chat.ui_chat_anim .ui_message.cw_message pre {
+        display: inline-block; }
+    body.irc-style #cw_timeline .ui_chat.ui_chat_anim .ui_chat_meta.ui_chat_date {
+      top: 2px;
+      right: auto; }
+      body.irc-style #cw_timeline .ui_chat.ui_chat_anim .ui_chat_meta.ui_chat_date span {
+        text-align: right;
+        position: absolute;
+        width: 10em;
+        right: -2.8em; }
+  body.irc-style #cw_timeline .ui_chat_last {
+    border: none !important; }
+  body.irc-style #cw_only_unread_room {
+    border: none; }
+  body.irc-style #cw_roomfilter_area {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    border: none !important;
+    padding: 0; }
+    body.irc-style #cw_roomfilter_area input {
+      width: 176px;
+      height: 19px; }
+  body.irc-style .cw_room_link.dev_room {
+    padding: 2px;
+    border: none; }
+    body.irc-style .cw_room_link.dev_room .ui_room_icon {
+      display: none; }
+    body.irc-style .cw_room_link.dev_room .ui_roomlist_orgtitle {
+      display: none; }
+  body.irc-style #cw_timeline {
+    background-color: #222222; }
+    body.irc-style #cw_timeline .dev_date_head {
+      background-color: #3c3c3c;
+      border: none;
+      color: #dddddd; }
+  body.irc-style #cw_timeline .ui_chat {
+    background-color: transparent; }
+    body.irc-style #cw_timeline .ui_chat:hover {
+      background-color: #303030; }
+    body.irc-style #cw_timeline .ui_chat .ui_message pre {
+      color: #dddddd; }
+      body.irc-style #cw_timeline .ui_chat .ui_message pre .dev_quote {
+        background-color: transparent;
+        border-color: #888888; }
+  body.irc-style #cw_send_area .toolbar {
+    background: #222222 !important; }
+    body.irc-style #cw_send_area .toolbar .cw_buttons {
+      color: #dddddd;
+      background: transparent !important; }
+  body.irc-style #cw_send_area #cw_chattext {
+    background-color: #222222;
+    color: #dddddd;
+    outline: 0; }
+  body.irc-style #cw_outer_west {
+    background: #222222; }
+    body.irc-style #cw_outer_west #cw_roomfilter_area {
+      background: #222222; }
+    body.irc-style #cw_outer_west .ui_contentheader {
+      background: #222222; }
+    body.irc-style #cw_outer_west .ui_chatlistheader li {
+      background: #222222;
+      color: #dddddd; }
+    body.irc-style #cw_outer_west .cw_room_link.dev_room {
+      background: #222222;
+      color: #dddddd; }
+      body.irc-style #cw_outer_west .cw_room_link.dev_room.dev_selected {
+        background: #6f6f6f; }
+    body.irc-style #cw_outer_west .ui_room_limitover {
+      background: #222222;
+      color: #dddddd; }
+    body.irc-style #cw_outer_west #cw_roomlist_items_area {
+      background: #222222; }
