@@ -89,6 +89,13 @@ Chatwork = {
         self.decide(true);
     });
 
+    //ユーザ名をクリックすると入力する処理
+    $dialog.on('click', 'li', function(ev){
+      $dialog.find('li').hide();
+      $(this).show();
+      self.decide();
+    });
+
     this.$mentionDialog = $dialog;
 
     return $dialog;
@@ -114,7 +121,7 @@ Chatwork = {
     var $dialog = this.getMentionDialog();
     $dialog.find('ul').html('');
     for (var i = 0; i < mentions.length; i++){
-      $li = $('<li style="padding: 2px"/>');
+      $li = $('<li style="padding: 2px; cursor: pointer"/>');
       $li.text(mentions[i].name);
       $li.attr('data-cw-name', mentions[i].name.toLowerCase());
       $li.attr('data-cw-id', mentions[i].id);
