@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body.irc-style {
   /* 右サイドバーを縦幅いっぱいにする */
   /* end */
@@ -124,6 +123,13 @@ body.irc-style {
       body.irc-style #cw_timeline .ui_chat .ui_message pre .dev_quote {
         background-color: transparent;
         border-color: #888888; }
+      body.irc-style #cw_timeline .ui_chat .ui_message pre .dev_info {
+        background: #303030; }
+        body.irc-style #cw_timeline .ui_chat .ui_message pre .dev_info .title {
+          background: #303030; }
+        body.irc-style #cw_timeline .ui_chat .ui_message pre .dev_info .ui_tag, body.irc-style #cw_timeline .ui_chat .ui_message pre .dev_info .ui_task_complete {
+          background: #303030;
+          border: none; }
   body.irc-style #cw_send_area .toolbar {
     background: #222222 !important; }
     body.irc-style #cw_send_area .toolbar .cw_buttons {
