@@ -18,7 +18,7 @@ Chatwork = {
    */
   getMyInfo: function(){
     var info = {};
-    var scriptText = $('#cw_all > script').first().text();
+    var scriptText = $('#cw_all > script').text();
 
     info.token = /var ACCESS_TOKEN = '(\w+)'/.exec(scriptText)[1];
     info.myid = /var myid = '(\w+)'/.exec(scriptText)[1];
